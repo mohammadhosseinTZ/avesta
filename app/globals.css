@@ -1,26 +1,63 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-custom: #36c4c5;
+  --color-main-bg:#080016;
+  --color-orange:#D06026;
+  --color-white-color:#FEF7FF;
+  --color-light-purple:#C4BCFC;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer theme {
+  .dark {
+    --color-white-color: #1D0B4D;
+    --color-main-bg: #FEF7FF;
+    --color-light-purple:#1D0B4D;
   }
+}
+@font-face {
+  font-family: "iran-sans";
+  src: url("../public/fonts/IRANSansX-Regular.woff") , 
+  url("../public/fonts/IRANSansX-Regular.woff") 
+  format("woff") ;
+
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:"iran-sans" ;
 }
+.container{
+  max-width: 850px;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* HERO START */
+html:not(.dark) .bg-hero{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 117%;
+  filter: brightness(0.3);
+  background-image: url("../public//assets/BG2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+html.dark .bg-hero{
+  background-image: url("../public/assets/bg-white-left.png" ) , url("../public/assets/bg-white-right.png");
+  width: 100%;
+  height: 296px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: left, right;
+}
+/* HERO END*/
