@@ -12,12 +12,16 @@
   --color-orange:#D06026;
   --color-white-color:#FEF7FF;
   --color-light-purple:#C4BCFC;
+  --color-dark-gray:#fbfbfb4a;
+  --color-light-gray:#fbfbfb1a;
 }
 @layer theme {
   .dark {
     --color-white-color: #1D0B4D;
     --color-main-bg: #FEF7FF;
     --color-light-purple:#1D0B4D;
+    --color-dark-gray:#c4bcfcb8;
+    --color-light-gray:#c4bcfc33;
   }
 }
 @font-face {
@@ -39,16 +43,17 @@ body {
 }
 /* HERO START */
 html:not(.dark) .bg-hero{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 117%;
-  filter: brightness(0.3);
-  background-image: url("../public//assets/BG2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  filter: brightness(.1);
+    background-image: url("../public/assets/BG2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #c266ff;
 }
 html.dark .bg-hero{
   background-image: url("../public/assets/bg-white-left.png" ) , url("../public/assets/bg-white-right.png");
@@ -61,3 +66,50 @@ html.dark .bg-hero{
   background-position: left, right;
 }
 /* HERO END*/
+
+/* SERVICES START */
+html:not(.dark) .services-bg{
+  background-image:url("../public/assets/Services-bg.png") ;
+}
+html.dark .services-bg{
+  background-image:url("../public/assets/Services-bg-2.png") ;
+}
+/* SERVICES END */
+/* ABOUT START */
+html:not(.dark) .bg-stars-one{
+  background-image: url("../public/assets/sTARS\ 1.png");
+}
+html.dark  .bg-stars-one{
+  background-image: url("../public/assets/sTARS1-light.png");
+}
+/* ABOUT END */
+/* INFO START */
+html:not(.dark) .bg-info {
+  background-image: url("../public/assets/Avesta achievements.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+html.dark .bg-info{
+  background-image: url("../public/assets/Avesta achievements-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+/* INFO END */
+/* section 2 */
+.bg-stars-two{
+  background-image: url("../public/assets/sTARS-2.png");
+}
+/* CART START */
+html:not(.dark) .cart-item{
+  border-radius: 14px;
+  background: linear-gradient(274deg, #e168f840, #e168f81c, #e168f808);
+  border-right: 1px solid #e168f840;
+}
+html.dark .cart-item{
+  background: #e168f81c ; 
+  border-right: 1px solid #e168f840;
+}
+/* CART END */

@@ -4,7 +4,7 @@ import Image from "next/image"
 
 function Hero() {
     return (
-        <div className="mb-[30px]  pb-[30px]">
+        <div className="  pb-[30px] relative overflow-hidden">
             <div className="bg-hero"></div>
             <div className="pt-[130px] container z-[8] relative">
                 <h1 className="text-white-color text-[25px] font-bold text-center leading-11.5">
