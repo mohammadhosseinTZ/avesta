@@ -1,4 +1,4 @@
-import { About, Banner, Carts, Hero, Info, Services } from "@/features"
+import { About, Banner, Carts, Events, Hero, Info, Managers, Services, Tabs } from "@/features"
 
 function page() {
   return (
@@ -12,7 +12,10 @@ function page() {
         <section className="bg-stars-two">
           <Info/>
           <Carts/>
-         <Banner/> 
+         <Banner/>
+         <Tabs/>
+         <Managers/> 
+         <Events/>
         </section>
       </div>
 

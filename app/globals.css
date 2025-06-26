@@ -1,10 +1,8 @@
 @import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/pagination';
 
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
 @theme {
   --color-custom: #36c4c5;
@@ -14,6 +12,8 @@
   --color-light-purple:#C4BCFC;
   --color-dark-gray:#fbfbfb4a;
   --color-light-gray:#fbfbfb1a;
+  --color-dark-pink:#501665;
+  --color-light-pink:#63348A;
 }
 @layer theme {
   .dark {
@@ -22,6 +22,8 @@
     --color-light-purple:#1D0B4D;
     --color-dark-gray:#c4bcfcb8;
     --color-light-gray:#c4bcfc33;
+    --color-dark-pink:#E0D2F3;
+    --color-light-pink:#E0D2F3;
   }
 }
 @font-face {
@@ -106,10 +108,54 @@ html.dark .bg-info{
 html:not(.dark) .cart-item{
   border-radius: 14px;
   background: linear-gradient(274deg, #e168f840, #e168f81c, #e168f808);
-  border-right: 1px solid #e168f840;
+  border-right: 1px solid #E168F8;
 }
 html.dark .cart-item{
   background: #e168f81c ; 
-  border-right: 1px solid #e168f840;
+  border-right: 1px solid #E168F8;
 }
 /* CART END */
+/* TABS TARTS */
+
+html:not(.dark) .out-bg{
+  background-image: url("../public/assets/documents/certificationContainer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html.dark .out-bg{
+  background-image: url("../public/assets/documents/certificationContainer-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html:not(.dark) .inner-bg{
+  background-image: url("../public/assets/documents/innerBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html.dark .inner-bg{
+  background-image: url("../public/assets/documents/Bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* TABS END */
+/* MANAGERS START */
+html:not(.dark) .mngs-swiper-bg{
+  background: radial-gradient(40% 42%, #b9b2f46e -101%, transparent);
+  background-position: 67px 39px;
+}
+html.dark .mngs-swiper-bg{
+  background-color: #F4EFFB;
+}
+.swiper-pagination{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: static !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: #B0A7C0 !important;
+}
+ .swiper-pagination-bullet:not(.swiper-pagination-bullet-active){
+  background-color: #908bd177;
+}
+
+/* MANAGERS END  */
