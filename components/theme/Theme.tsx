@@ -61,11 +61,11 @@ export default function ThemeToggle() {
   if (!mounted) return null
 
   return (
-    <button onClick={toggle} className="text-xl p-2">
+    <button onClick={toggle} className="text-xl p-2 w-[40px] h-[40px] box-border md:mr-[auto]">
       {theme === 'dark' ? 
-      <Image src="/assets/dark-mode.png" alt="dark" width={35} height={35}/> : theme === 'light' ? 
-      <Image src="/assets/light-mode.png" alt="dark" width={35} height={35}/> : 
-      <Image src="/assets/pc.png" alt="pc" width={30} height={30}/>}
+      <Image src="/assets/dark-mode.png" alt="dark" width={35} height={35} className='cursor-pointer'/> : theme === 'light' ? 
+      <Image src="/assets/light-mode.png" alt="dark" width={35} height={35} className='cursor-pointer'/> : 
+      <Image src="/assets/pc.png" alt="pc" width={28} height={28} className='cursor-pointer'/>}
     </button>
   )
 }

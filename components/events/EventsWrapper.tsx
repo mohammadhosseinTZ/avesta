@@ -9,7 +9,7 @@ function EventsWrapper() {
         setActive(id);
     }
     return (
-        <div className='relative mb-[80px] flex justify-between'>
+        <div className='relative md:mb-[80px] mb-[30px] flex justify-between flex-wrap'>
             <Event
                 id={1}
                 img={"/assets/events/1.jpg"}

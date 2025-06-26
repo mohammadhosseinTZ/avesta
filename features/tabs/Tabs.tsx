@@ -21,7 +21,7 @@ function Tabs() {
     const handleClicked = (item:TDocs)=>setItem(item);
     
     return (
-        <div className='container out-bg p-[60px_63px]  rounded-[15px] mb-[50px]'>
+        <div className='container out-bg p-[20px_23px] md:p-[60px_63px]  rounded-[15px] mb-[50px]'>
             {documents.length > 0 &&
                 <div className='inner-bg rounded-[15px]'>
                     <Hero document={item}/>

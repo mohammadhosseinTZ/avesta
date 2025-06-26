@@ -5,12 +5,8 @@ const config = {
     './app/**/*.{ts,tsx}'
   ],
   darkMode: "class",
-  theme: {
-    screens: {
 
-      md: "768px",
 
-    }},
   plugins: {
     '@tailwindcss/postcss': {},
   },

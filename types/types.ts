@@ -16,3 +16,7 @@ export type TManagers ={
 }
 
 export type TProps = { id: number, active: number, img: string, title: string, info: string, link: string, onClicked: (id: number) => void }
+
+export interface TMenuRef {
+    getElement : ()=>HTMLDivElement | null;
+}

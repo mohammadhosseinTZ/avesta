@@ -4,11 +4,11 @@ import React from 'react'
 function Services() {
     return (
         <div className='container services-bg mb-[20px]'>
-            <h2 className='text-white-color text-[20px] font-bold text-center leading-11.5 py-[20px]'> خدمات جامع و چندوجهی <span className='text-orange'>اَوستا</span> هوش‌یار در حوزه حمل‌ونقل</h2>
+            <h2 className='text-white-color text-[20px] md:text-[20px] font-bold text-center leading-9 md:leading-11.5 py-[20px]'> خدمات جامع و چندوجهی <span className='text-orange'>اَوستا</span> هوش‌یار در حوزه حمل‌ونقل</h2>
 
             <div className='flex flex-row-reverse'>
-                <div className='relative w-[100%] aspect-[3/2]'><Image src="/assets/servicesImage.png" alt='services' fill objectFit='container' /></div>
-                <ul className='[&>li]:text-white-color [&>li]:mb-[10px] [&>li]:before:ml-[15px]   [&>li]:before:content-[""]  [&>li]:before:inline-block [&>li]:before:rounded-[10px] '>
+                <div className='relative w-[100%] aspect-[3/2] hidden md:block'><Image src="/assets/servicesImage.png" alt='services' fill objectFit='container' /></div>
+                <ul className='[&>li]:text-white-color [&>li]:mb-[10px] [&>li]:before:ml-[15px]  p-[15px] md:p-[0px] [&>li]:before:content-[""]  [&>li]:before:inline-block [&>li]:before:rounded-[10px] '>
 
                     <li className='before:bg-orange before:min-w-[5px] before:w-[5px]  before:h-[73px] flex items-center'>
                         <div>

@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import "./globals.css";
 import ThemeProvider from "@/contexts/ThemeContext";
+import Footer from "@/components/footer/Footer";
 
 export default function RootLayout({
   children,
@@ -32,6 +33,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Header />
           {children}
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>
