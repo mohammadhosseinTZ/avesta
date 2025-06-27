@@ -12,6 +12,8 @@ function Tabs() {
         const fetchData = async () => {
 
             const data: TDocs[] | [] = await docs()
+            console.log(data , "data");
+            
             data && setDocuments(data)
             setItem(data[0])
         }

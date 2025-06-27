@@ -3,6 +3,8 @@ import "./globals.css";
 import ThemeProvider from "@/contexts/ThemeContext";
 import Footer from "@/components/footer/Footer";
 
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
