@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Avesta – سامانه مدیریت الکترونیک حمل و نقل و لجستیک
 
-## Getting Started
+این پروژه یک لندینگ‌پیج کاملاً ریسپانسیو برای معرفی **سامانه مدیریت الکترونیک اوستا** است. این سامانه با هدف ارائه خدمات پیشرفته در حوزه حمل‌ونقل کالا و لجستیک طراحی شده و با استفاده از تکنولوژی‌های مدرن و معماری ماژولار توسعه یافته است.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 تکنولوژی‌های استفاده‌شده
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Next.js 14 – App Router](https://nextjs.org/docs/app)  
+- [TypeScript](https://www.typescriptlang.org)  
+- [Tailwind CSS](https://tailwindcss.com)  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 ویژگی‌ها (Features)
 
-## Learn More
+- ✅ طراحی کاملاً **ریسپانسیو** برای موبایل، تبلت و دسکتاپ  
+- ✅ استفاده از **Shared Layout** در کل پروژه  
+- ✅ استفاده از **`generateMetadata`** برای تعریف متاتگ‌های **داینامیک و سئو فرندلی**  
+- ✅ استفاده از **Mock API** داخلی برای تست بدون نیاز به بک‌اند  
+- ✅ ساختار **ماژولار، قابل توسعه و تمیز**
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 ساختار پوشه‌ها
+app/
+├── page.tsx              ← صفحه اصلی لندینگ
+├── layout.tsx            ← لیوت عمومی + metadata عمومی
+│
+├── api/                  ← API داخلی برای mock
+│   └── managers/route.ts     ← API فرضی اطلاعات لندینگ
+│   └── services/route.ts
+│
+├── components/           ← کامپوننت‌های قابل استفاده مجدد
+│
+├── features/             ← بخش‌های مستقل محتوای لندینگ
+│
+├── services/             ← توابع fetch برای گرفتن داده‌ها
+│
+├── types/                ← انواع TypeScript مورد نیاز
+│
+├── lib/                  ← توابع قایل استافده مجدد
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔁 Mock API
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+برای شبیه‌سازی داده‌ها و تست سریع رابط کاربری، در مسیر `app/api/services/route.ts` , `app/api/managers/route.ts` یک endpoint ساده پیاده‌سازی شده که اطلاعات فرضی (mock) را باز می‌گرداند.
+
+---
+
+نحوه اجرای پروژه:
+
+1- کلون کردن پروژه
+2-نصب وابستگی ها: npm install
+3-اجرای پروژه در حالت توسعه: npm run dev
+4- پروژه از طریق مسیر http://localhost:3000 در دسترس است.
