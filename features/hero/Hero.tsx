@@ -20,7 +20,7 @@ function Hero() {
                 </p>
 
                 <div className="relative pb-[100px] mt-[20px]">
-                    <div className="relative h-[220px] w-[55%] md:w-[75%] m-[auto]"><Image loading="lazy" src={"/assets/hero-container.png"} alt="hero" objectFit="cover" fill /></div >
+                    <div className="relative h-[220px] w-[55%] md:w-[75%] m-[auto]"><Image priority src={"/assets/hero-container.png"} alt="hero" objectFit="cover" fill /></div >
                     <Items/>
                 </div>
 
