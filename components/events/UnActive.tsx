@@ -3,7 +3,7 @@ import { TProps } from '@/types/types'
 import Image from 'next/image'
 import React from 'react'
 
-function UnActive({ id, img, title, info, link, onClicked}:Omit<TProps , 'active'>) {
+function UnActive({ id, img, title, onClicked}:Omit<TProps , 'active' | 'link' | 'info'>) {
   return (
 
     <div onClick={() => onClicked(id)} className='rounded-[15px] overflow-hidden relative md:w-[50%] w-[48%] cursor-pointer transition-all order-2'>

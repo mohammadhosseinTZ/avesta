@@ -1,6 +1,6 @@
 import { TDocs } from '@/types/types'
 import Image from 'next/image'
-import React from 'react'
+
 
 function Hero({ document }: { document: TDocs }) {
     return (

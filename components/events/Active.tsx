@@ -5,7 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 import SvgArrow from './SvgArrow'
 
-function Active({ id, img, title, info, link }: Omit<TProps, "onClicked" | "active">) {
+function Active({  img, title, info, link }: Omit<TProps, "onClicked" | "active" | "id">) {
     return (
         <div className='md:absolute z-[99] transition-all flex left-[50%] items-center md:items-stretch md:scale-[1.1] md:translate-x-[-50%] mb-[50px] md:mb-[0px] order-1'>
             <div className='md:relative w-[138px] md:w-[340px] h-[180px] md:h-[unset] aspect-[2/1] rounded-[15px] overflow-hidden translate-x-[-34px] z-[8] '>

@@ -13,7 +13,6 @@ function Event({ id, img, title, info, link, onClicked, active }: TProps) {
         id == active ?
 
           <Active
-            id={id}
             img={img}
             title={title}
             info={info}
@@ -24,8 +23,6 @@ function Event({ id, img, title, info, link, onClicked, active }: TProps) {
             id={id}
             img={img}
             title={title}
-            info={info}
-            link={link}
             onClicked={onClicked} />
       }
     </>

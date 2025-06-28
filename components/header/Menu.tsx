@@ -1,6 +1,4 @@
 'use client'
-import { forwardRef, useState } from "react"
-import styles from "./styles.module.css"
 
 const Menu = ({ onClicked, isOpen }: { onClicked: () => void, isOpen: boolean }) => {
 
