@@ -7,7 +7,7 @@ import SvgArrow from './SvgArrow'
 
 function Active({  img, title, info, link }: Omit<TProps, "onClicked" | "active" | "id">) {
     return (
-        <div className='md:absolute z-[99] transition-all flex left-[50%] items-center md:items-stretch md:scale-[1.1] md:translate-x-[-50%] mb-[50px] md:mb-[0px] order-1'>
+        <div className='md:absolute z-[99] transition-all flex left-[50%] items-center md:items-stretch md:scale-[1] md:translate-x-[-50%] mb-[50px] md:mb-[0px] order-1 min-w-[60%]'>
             <div className='md:relative w-[138px] md:w-[340px] h-[180px] md:h-[unset] aspect-[2/1] rounded-[15px] overflow-hidden translate-x-[-34px] z-[8] '>
                 <Image src={img} alt={title} fill /></div>
             <div className='bg-light-pink w-[170px] md:w-[240px] z-[88] relative scale-[1.1]  p-[10px_15px] md:p-[20px_30px] rounded-[15px] '>

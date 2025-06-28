@@ -6,7 +6,7 @@ import React from 'react'
 function UnActive({ id, img, title, onClicked}:Omit<TProps , 'active' | 'link' | 'info'>) {
   return (
 
-    <div onClick={() => onClicked(id)} className='rounded-[15px] overflow-hidden relative md:w-[50%] w-[48%] cursor-pointer transition-all order-2'>
+    <div onClick={() => onClicked(id)} className='rounded-[15px] overflow-hidden relative md:w-[50%] w-[calc(100%/2-10px)] cursor-pointer transition-all order-2'>
       <div className='relative w-[100%] aspect-[2/1.4] blur-[1px]' >
         <Image src={img} alt={title} fill/>
       </div>
