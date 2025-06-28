@@ -58,3 +58,7 @@ app/
 3-اجرای پروژه در حالت توسعه: npm run dev
 <br/>
 4- پروژه از طریق مسیر http://localhost:3000 در دسترس است.
+
+---
+
+مشاهده پروژه: [Avesta](https://avesta-six.vercel.app/)
